@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito:400,600,700&display=swap");
+@import "reset";
+@import "color_variables";
+
+body {
+  background: var(--bg3);
+  color: var(--text3);
+  
+  * {
+    font-family: "Nunito", ;
+  }
+}
+
+html, body {
+  height: 100%;
+}
+
+input {
+  line-height: normal;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.body-container {
+  max-width: 1280px;
+  margin: auto;
+  background: var(--bg2);
+  border-left: var(--text4) solid 2px;
+  border-right: var(--text4) solid 2px;
+  height: calc(100%);
+}
+
+@import "modal";
+@import "loading_spinner";
+@import "session";
+@import "header";
+@import "theme_switch";
+@import "splash";
+@import "portfolio";
+@import "purchase_form";
+@import "chart";
+@import "footer";

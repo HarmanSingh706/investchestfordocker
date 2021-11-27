@@ -1,0 +1,25 @@
+.modal-background {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: rgba(var(--opacitybg), 0.8);
+  z-index: 200;
+  cursor: zoom-out;
+}
+
+.modal-child {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 50%;
+  min-width: 360px;
+  max-width: 520px;
+  transform: translate(-50%, -50%);
+  background: var(--bg2);
+  padding: 16px;
+  border-radius: 4px;
+  border: var(--text4) solid 4px;
+  cursor: default;
+}

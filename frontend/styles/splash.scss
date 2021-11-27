@@ -1,0 +1,74 @@
+.splash-container {
+    width: 100%;
+    max-width: 1280px;
+    margin: auto;
+    background-image: url(https://investchest.s3.us-east-2.amazonaws.com/splash-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    color: var(--text2);
+    overflow: hidden;
+}
+
+.splash {
+    height: calc(100vh - 72px);
+    width: 100%;
+    background: rgba(var(--opacitybg), 0.4);
+    overflow: hidden;
+}
+
+.splash-content {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+
+    h1 {
+        font-size: 64px;
+        font-weight: 700;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: var(--bg1);
+        text-align: center;
+    }
+
+    > div {
+
+        margin-top: 16px;
+        
+        span {
+            display: block;
+            text-align: center;
+            font-size: 32px;
+            font-weight: 600;
+            -webkit-text-stroke-width: 0.5px;
+            -webkit-text-stroke-color: var(--bg1);
+            max-width: 500px;
+            margin: auto;
+        }
+    }
+}
+
+.splash-button-container {
+    display: flex;
+    justify-content: center;
+    div {
+        font-weight: 500;
+        font-size: 24px;
+        background: var(--bg1);
+        padding: 8px;
+        border-radius: 4px;
+        border: $blue solid 2px;
+        cursor: pointer;
+        text-align: center;
+        width: max-content;
+    }
+
+    div:hover {
+        background-color: $blue;
+        border-color: var(--text1);
+    }
+
+    .splash-button {
+        margin-right: 16px;
+    }
+}

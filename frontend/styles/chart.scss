@@ -1,0 +1,106 @@
+.chart-selectors {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    margin: 16px 0 12px;
+    border-top: var(--text4) solid 2px;
+    padding-top: 16px;
+    color: var(--text4);
+
+    .chart-range, .chart-range-active{
+        text-align: center;
+        flex: 1;
+        letter-spacing: 1px;
+        font-weight: 600;
+        vertical-align: middle;
+        line-height: normal;
+    }
+
+    .chart-range {
+        cursor: pointer;
+    }
+
+    .chart-range:hover {
+        color: $blue;
+    }
+
+    .chart-range-active {
+        color: $blue;
+    }
+
+    .chart-range.disabled {
+        cursor: not-allowed;
+        color: var(--bg4);
+    }
+
+    .chart-range.disabled:hover {
+        color: var(--bg4);
+    }
+
+    .divider {
+        border-right: var(--text4) solid 1px;
+        height: 19px;
+    }
+
+}
+
+.stock-chart-container {
+    font-size: 12px;
+    background-color: var(--bg1);
+    border: var(--text4) solid 3px;
+    border-radius: 4px;
+    height: 326px;
+    position: relative;
+    overflow: hidden;
+
+    tspan {
+        fill: var(--chart);
+    }
+    line {
+        stroke: var(--chart);
+        opacity: 0.4;
+    }
+    > .chart-ticker {
+        display: inline-block;
+        position: absolute;
+        font-size: 48px;
+        font-weight: 600;
+        top: 16px;
+        left: 16px;
+        opacity: 0.3;
+        color: var(--text1);
+        letter-spacing: 1px;
+        -webkit-text-stroke-width: 2px;
+        -webkit-text-stroke-color: var(--bg1);
+    }
+    .chart-error {
+        font-size: 18px;
+        font-weight: 700;
+        color: $red;
+        text-align: center;
+        vertical-align: middle;
+        line-height: normal;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -webkit-text-stroke-width: 0.5px;
+        -webkit-text-stroke-color: var(--bg1);
+    }
+}
+
+.chart-tooltip {
+    background: rgba(var(--opacitybg), 0.8);
+    border-radius: 4px;
+    padding: 6px 6px 0;
+    border: var(--text4) solid 1px;
+    color: var(--text3);
+    font-weight: 600;
+
+    
+    p {
+        text-align: center;
+        margin-bottom: 6px;
+    }
+}
